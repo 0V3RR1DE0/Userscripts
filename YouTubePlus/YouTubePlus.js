@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTubePlus
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.0.1-alpha
 // @description  Enhances YouTube with additional features.
 // @author       0V3RR1DE0
 // @match        https://www.youtube.com/*
@@ -25,7 +25,7 @@
         // Create the frame-by-frame controls container
         const controlsContainer = document.createElement('div');
         controlsContainer.style.position = 'absolute';
-        controlsContainer.style.bottom = '10px';
+        controlsContainer.style.top = '80px'; // Adjust the top position as needed
         controlsContainer.style.left = '10px';
         controlsContainer.style.zIndex = '9999';
 
@@ -49,12 +49,12 @@
         controlsContainer.appendChild(prevFrameButton);
         controlsContainer.appendChild(nextFrameButton);
 
-        // Append the controls container below the video
-        const videoTitle = document.querySelector('.title.style-scope.ytd-video-primary-info-renderer');
-        if (videoTitle) {
-            videoTitle.parentElement.appendChild(controlsContainer);
+        // Append the controls container to the video page
+        const videoPage = document.querySelector('#info');
+        if (videoPage) {
+            videoPage.appendChild(controlsContainer);
         } else {
-            console.error('Video title not found.');
+            console.error('Video page not found.');
         }
     }
 
