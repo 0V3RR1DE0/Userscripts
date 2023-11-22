@@ -10,7 +10,7 @@ To install YouTubePlus:
    - [Tampermonkey for Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
    - [Tampermonkey for Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
 
-2. Navigate to the [YouTubePlus Userscript](URL_OF_RAW_SCRIPT).
+2. Navigate to the [YouTubePlus Userscript](https://github.com/0V3RR1DE0/Userscripts/tree/main/YouTubePlus).
 
 3. Click the "Raw" button to view the raw script.
 
