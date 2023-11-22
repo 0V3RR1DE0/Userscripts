@@ -1,10 +1,11 @@
 // ==UserScript==
-// @name         YouTube Frame-by-Frame Navigation
+// @name         YouTubePlus
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  Adds frame-by-frame navigation controls to YouTube videos.
+// @description  Adds lots of controls & features to YouTube videos.
 // @author       noEngineer
 // @match        https://www.youtube.com/*
+// @match        https://www.youtube-nocookie.com/*
 // @grant        none
 // ==/UserScript==
 
