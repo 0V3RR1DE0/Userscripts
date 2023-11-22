@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         YouTubePlus
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/0V3RR1DE0/youtubeplus
 // @version      0.0.1-alpha
 // @description  Enhances YouTube with additional features.
 // @author       0V3RR1DE0
@@ -25,7 +25,7 @@
         // Create the frame-by-frame controls container
         const controlsContainer = document.createElement('div');
         controlsContainer.style.position = 'absolute';
-        controlsContainer.style.top = '80px'; // Adjust the top position as needed
+        controlsContainer.style.bottom = '40px'; // Adjust the bottom position as needed
         controlsContainer.style.left = '10px';
         controlsContainer.style.zIndex = '9999';
 
@@ -34,7 +34,7 @@
         prevFrameButton.textContent = '<<';
         prevFrameButton.addEventListener('click', () => {
             player.pause(); // Pause the video when navigating frames
-            player.currentTime -= 1 / player.playbackRate;
+            player.currentTime -= 0.1 / player.playbackRate;
         });
 
         // Create the "Next Frame" button
@@ -42,19 +42,19 @@
         nextFrameButton.textContent = '>>';
         nextFrameButton.addEventListener('click', () => {
             player.pause(); // Pause the video when navigating frames
-            player.currentTime += 1 / player.playbackRate;
+            player.currentTime += 0.05 / player.playbackRate;
         });
 
         // Append buttons to the controls container
         controlsContainer.appendChild(prevFrameButton);
         controlsContainer.appendChild(nextFrameButton);
 
-        // Append the controls container to the video page
-        const videoPage = document.querySelector('#info');
-        if (videoPage) {
-            videoPage.appendChild(controlsContainer);
+        // Append the controls container to the "ytp-left-controls" div
+        const leftControlsDiv = document.querySelector('.ytp-left-controls');
+        if (leftControlsDiv) {
+            leftControlsDiv.appendChild(controlsContainer);
         } else {
-            console.error('Video page not found.');
+            console.error('ytp-left-controls div not found.');
         }
     }
 
