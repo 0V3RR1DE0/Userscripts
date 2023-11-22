@@ -1,11 +1,12 @@
 // ==UserScript==
-// @name         YouTube Frame-by-Frame Navigation
+// @name         YouTubePlus
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  Adds frame-by-frame navigation controls to YouTube videos.
+// @description  Enhances YouTube with additional features.
 // @author       0V3RR1DE0
 // @match        https://www.youtube.com/*
 // @grant        none
+// @license      MIT
 // ==/UserScript==
 
 (function() {
@@ -24,7 +25,7 @@
         // Create the frame-by-frame controls container
         const controlsContainer = document.createElement('div');
         controlsContainer.style.position = 'absolute';
-        controlsContainer.style.top = '10px';
+        controlsContainer.style.bottom = '10px';
         controlsContainer.style.left = '10px';
         controlsContainer.style.zIndex = '9999';
 
@@ -32,6 +33,7 @@
         const prevFrameButton = document.createElement('button');
         prevFrameButton.textContent = '<<';
         prevFrameButton.addEventListener('click', () => {
+            player.pause(); // Pause the video when navigating frames
             player.currentTime -= 1 / player.playbackRate;
         });
 
@@ -39,6 +41,7 @@
         const nextFrameButton = document.createElement('button');
         nextFrameButton.textContent = '>>';
         nextFrameButton.addEventListener('click', () => {
+            player.pause(); // Pause the video when navigating frames
             player.currentTime += 1 / player.playbackRate;
         });
 
@@ -46,8 +49,13 @@
         controlsContainer.appendChild(prevFrameButton);
         controlsContainer.appendChild(nextFrameButton);
 
-        // Append the controls container to the video player parent
-        player.parentElement.appendChild(controlsContainer);
+        // Append the controls container below the video
+        const videoTitle = document.querySelector('.title.style-scope.ytd-video-primary-info-renderer');
+        if (videoTitle) {
+            videoTitle.parentElement.appendChild(controlsContainer);
+        } else {
+            console.error('Video title not found.');
+        }
     }
 
     // Add the frame-by-frame controls when the YouTube video player is ready
@@ -59,4 +67,5 @@
     });
 
     observer.observe(document.body, { childList: true, subtree: true });
+
 })();
