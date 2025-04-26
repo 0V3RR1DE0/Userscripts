@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         YouTubePlus
-// @namespace    https://github.com/0V3RR1DE0/youtubeplus
+// @namespace    https://github.com/0V3RR1DE0/Userscripts/tree/main/YouTubePlus
 // @version      0.0.1-alpha
 // @description  Enhances YouTube with additional features.
 // @author       0V3RR1DE0
