@@ -16,6 +16,8 @@ To install YouTubePlus:
 
 4. The userscript manager should detect the script and prompt you to install it. Confirm the installation.
 
+Or install it here [Install](https://github.com/0V3RR1DE0/Userscripts/raw/refs/heads/main/YouTubePlus/YouTubePlus.user.js)
+
 ## Features
 
 - **Frame-by-Frame Navigation:** Navigate through YouTube videos frame by frame.
