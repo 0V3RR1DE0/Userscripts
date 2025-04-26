@@ -20,7 +20,7 @@ To install a userscript:
 ## Scripts
 
 - [YouTubePlus](https://github.com/0V3RR1DE0/Userscripts/tree/main/YouTubePlus): Enhances the YouTube video watching experience. [Install](https://github.com/0V3RR1DE0/Userscripts/raw/refs/heads/main/YouTubePlus/YouTubePlus.user.js)
-- [Reddit Post Exporter](https://github.com/0V3RR1DE0/Userscripts/tree/main/Reddit%20Post%20Exporter): Enhances the YouTube video watching experience. [Install](https://github.com/0V3RR1DE0/Userscripts/raw/refs/heads/main/Reddit%20Post%20Exporter/reddit-post-exporter.user.js)
+- [Reddit Post Exporter](https://github.com/0V3RR1DE0/Userscripts/tree/main/Reddit%20Post%20Exporter): Makes it easy to copy and export Reddit posts. [Install](https://github.com/0V3RR1DE0/Userscripts/raw/refs/heads/main/Reddit%20Post%20Exporter/reddit-post-exporter.user.js)
 
 ### Usage
 
