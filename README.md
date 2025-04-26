@@ -9,6 +9,7 @@ To install a userscript:
 1. Make sure you have a userscript manager installed. Tampermonkey is recommended.
    - [Tampermonkey for Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
    - [Tampermonkey for Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
+   - [Tampermonkey for Edge](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd)
 
 2. Navigate to the specific userscript file within this repository.
 
@@ -18,7 +19,8 @@ To install a userscript:
 
 ## Scripts
 
-- [YouTubePlus](youtubeplus.user.js): Enhances the YouTube video watching experience.
+- [YouTubePlus](https://github.com/0V3RR1DE0/Userscripts/tree/main/YouTubePlus): Enhances the YouTube video watching experience. [Install](https://github.com/0V3RR1DE0/Userscripts/raw/refs/heads/main/YouTubePlus/YouTubePlus.user.js)
+- [Reddit Post Exporter](https://github.com/0V3RR1DE0/Userscripts/tree/main/Reddit%20Post%20Exporter): Enhances the YouTube video watching experience. [Install](https://github.com/0V3RR1DE0/Userscripts/raw/refs/heads/main/Reddit%20Post%20Exporter/reddit-post-exporter.user.js)
 
 ### Usage
 
