@@ -9,6 +9,7 @@ To install YouTubePlus:
 1. Make sure you have a userscript manager installed. Tampermonkey is recommended.
    - [Tampermonkey for Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
    - [Tampermonkey for Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
+   - [Tampermonkey for Edge](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd)
 
 2. Navigate to the [YouTubePlus Userscript](https://github.com/0V3RR1DE0/Userscripts/tree/main/YouTubePlus).
 
