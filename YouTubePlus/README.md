@@ -29,3 +29,5 @@ Once installed, YouTubePlus will add frame-by-frame navigation controls to the Y
 ## License
 
 This project is licensed under the MIT License.
+
+[Return to Userscripts Collection](../)
