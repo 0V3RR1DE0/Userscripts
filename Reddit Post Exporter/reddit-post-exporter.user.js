@@ -4,6 +4,7 @@
 // @version      1.0
 // @description  Export Reddit posts in various formats with a clean dropdown menu
 // @author       0V3RR1DE0
+// @license      MIT
 // @match        https://www.reddit.com/r/*/comments/*
 // @match        https://old.reddit.com/r/*/comments/*
 // @grant        GM_addStyle
